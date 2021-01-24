@@ -1,0 +1,19 @@
+{
+    "hello":"Bienvenue",
+    "start":"Commencer",
+    "participate":"Participer",
+    "localization":"Comment catégoriseriez- vous ce lieu ?",
+    "opinion":"Comment considérez-vous ce lieu ?",
+    "addcomment":"Voulez vous ajouter un commentaire à propos de ce lieu?",
+    "need-loc-comp":"Activer la localisation et la boussole pour participer",
+    "IgetInvolve":"JE M'ENGAGE",
+    "GitHub":"Voir le projet sur GitHub !",
+    "catch":"Utiliser votre smartphone pour s'engager dans le futur développement de votre ville est maintenant possible !",
+    "explaination":"Activer la localisation et la boussole pour commencer, dès maintenant, à identifier n'importe quels éléments dans votre ville que vous aimez ou pas :)",
+    "whatName":"Quel est votre nom ?",
+    "error-userName":"Vous devez renseigner votre nom pour continuer :)",
+    "yes":"Oui",
+    "no":"Non",
+    "holder-comment":"Votre commentaire ...",
+    "look-south":"Orientez votre smartphone vers le sud."
+}
