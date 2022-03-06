@@ -1,0 +1,38 @@
+[
+    {
+        "name": "starbucks",
+        "id": 849429,
+        "lat": 6.627227,
+        "lon": 46.520002,   
+        "alt": 0,
+        "scale": 1.8,
+        "heading": 3.2
+    },
+    {
+        "name": "amphitheater",
+        "id": 849487,
+        "lat": 6.626683,
+        "lon": 46.519724, 
+        "alt": 0,
+        "scale": 0.20,
+        "heading": 1.9
+    },
+    {
+        "name": "wheel",
+        "id": 790040,
+        "lat": 6.62596,
+        "lon": 46.51947, 
+        "alt": 485,
+        "scale": 2.5,
+        "heading": 1.83
+    },
+    {
+        "name": "tower_trainstation",
+        "id": 790060,
+        "lat": 6.6241428,
+        "lon": 46.5183107,
+        "alt": 0,
+        "scale": 0.2,
+        "heading": 0
+    }
+]

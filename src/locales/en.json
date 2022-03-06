@@ -1,19 +1,54 @@
 {
-    "hello":"Welcome",
-    "start":"Start",
-    "participate":"Participate",
-    "localization":"How would you categorize this location?",
-    "opinion":"How would you rate this location?",
-    "addcomment":"Would you want to share a comment about this location?",
-    "need-loc-comp":"Activate the location and the compass to participate",
-    "IgetInvolve":"I GET INVOLVED",
-    "GitHub":"Check it out on GitHub !",
-    "catch":"Using your smartphone to get engaged in the future development of your city is now possible !",
-    "explaination":"Activate, right now, the localization and the compass to indentify any elements of your city that you like or dislike :)",
-    "whatName":"What is your name?",
-    "error-userName":"You need to provide your name to continue :)",
-    "yes":"Yes",
-    "no":"No",
-    "holder-comment":"Your comment ...",
-    "look-south":"Face south with your smartphone."
+    "button":{
+        "start":"Start",
+        "cancel":"Cancel",
+        "validate":"Validate",
+        "close":"Fermer",
+        "skip":"Skip",
+        "submit":"Submit",
+        "previous":"Previous",
+        "participate":"Participate",
+        "GitHub":"Check it out !"
+    },
+    "welcome":{
+        "catchphrase":"Get involved in the co-design of your city within minutes, it is now possible!",
+        "directive":"This experience allows you to discover this new tool, but also improve its development by giving your honest opinion! Your participation is without commitment, you can stop at any time.",
+        "thanks":"Thank you! Enjoy your participation!"
+
+    },
+    "participation":{
+        "directives":{
+            "choose-category-title":"Specify your opinion",
+            "choose-category-description":"Choose a category",
+            "choose-tags-title":"Customize your opinion",
+            "choose-tags-description":"Choose tags and add a voice/written comment",
+            "add-vocal":"Add a voice comment",
+            "add-writing":"I prefer typing",
+            "edit-writing":"Edit my comment",
+            "add-writing-placeholder":"Write your comment here",
+            "saved":"Your comment has been saved"
+        },
+        "elements-categories":{
+            "building":"Building",
+            "view":"Vantage Point",
+            "object":"Street Furniture",
+            "other":"Other Element"
+        },
+        "tagsList":{
+            "architecture":"Architecture",
+            "beauty":"Aesthetic",
+            "height":"Height",
+            "density":"Density",
+            "noise":"Noise",
+            "atmosphere":"Atmosphere",
+            "price":"Price",
+            "location":"Location",
+            "security":"Security",
+            "sustainability":"Sustainability",
+            "comformity":"Conformity",
+            "utility":"Utility",
+            "lack":"Lack",
+            "other":"Other"
+        }
+    }
 }

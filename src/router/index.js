@@ -5,7 +5,7 @@ import routes from './routes';
 // Create Router
 const router = createRouter({
   history: createWebHistory(),
-  base: process.env.BASE_URL,
+  base: import.meta.env.VITE_BASE_URL,
   routes
 });
 

@@ -1,19 +1,53 @@
 {
-    "hello":"Bienvenue",
-    "start":"Commencer",
-    "participate":"Participer",
-    "localization":"Comment catégoriseriez- vous ce lieu ?",
-    "opinion":"Comment considérez-vous ce lieu ?",
-    "addcomment":"Voulez vous ajouter un commentaire à propos de ce lieu?",
-    "need-loc-comp":"Activer la localisation et la boussole pour participer",
-    "IgetInvolve":"JE M'ENGAGE",
-    "GitHub":"Voir le projet sur GitHub !",
-    "catch":"Utiliser votre smartphone pour s'engager dans le futur développement de votre ville est maintenant possible !",
-    "explaination":"Activer la localisation et la boussole pour commencer, dès maintenant, à identifier n'importe quels éléments dans votre ville que vous aimez ou pas :)",
-    "whatName":"Quel est votre nom ?",
-    "error-userName":"Vous devez renseigner votre nom pour continuer :)",
-    "yes":"Oui",
-    "no":"Non",
-    "holder-comment":"Votre commentaire ...",
-    "look-south":"Orientez votre smartphone vers le sud."
+    "button":{
+        "start":"Commencer",
+        "cancel":"Annuler",
+        "validate":"Valider",
+        "close":"Fermer",
+        "skip":"Passer",
+        "submit":"Enregistrer",
+        "previous":"Précédent",
+        "participate":"Participer",
+        "GitHub":"Pour en savoir plus !"
+    },
+    "welcome":{
+        "catchphrase":"Participer à la co-conception de votre ville en quelques minutes seulement, c'est maintenant possible !",
+        "directive":"Cette experience vous permet de découvrir en avant-première ce nouvel outil, mais aussi d'améliorer son développement en donnant votre avis ! Votre participation est sans engagement, vous pouvez vous arrêter à tout moment.",
+        "thanks":"Merci et bonne participation !"
+    },
+    "participation":{
+        "directives":{
+            "choose-category-title":"Décris ton avis",
+            "choose-category-description":"Choisis une catégorie",
+            "choose-tags-title":"Personnalise ton avis",
+            "choose-tags-description":"Choisis des tags et ajout un commentaire oral ou écrit",
+            "add-vocal":"Ajouter une opinion vocale",
+            "add-writing":"Je préfère écrire",
+            "edit-writing":"Modifier mon commentaire",
+            "add-writing-placeholder":"Ajouter un commentaire",
+            "saved":"Votre commentaire a bien été enregistré !"
+        },
+        "elements-categories":{
+            "building":"Bâtiment",
+            "view":"Point de Vue",
+            "object":"Mobilier Urbain",
+            "other":"Autre Element"
+        },
+        "tagsList":{
+            "height":"Hauteur",
+            "density":"Densité",
+            "beauty":"Esthétisme",
+            "architecture":"Architecture",
+            "price":"Prix",
+            "location":"Emplacement",
+            "noise":"Bruit",
+            "atmosphere":"Ambiance",
+            "security":"Sécurité",
+            "sustainability":"Durabilité",
+            "comformity":"Conformité",
+            "utility":"Utilité",
+            "lack":"Abscence",
+            "other":"Autre"
+        }
+    }
 }
