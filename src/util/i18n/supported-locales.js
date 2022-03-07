@@ -1,4 +1,4 @@
-import supportedLocales from "../../config/supported-locales"
+import supportedLocales from "../config/supported-locales"
 
 export function getSupportedLocales() {
   let annotatedLocales = []

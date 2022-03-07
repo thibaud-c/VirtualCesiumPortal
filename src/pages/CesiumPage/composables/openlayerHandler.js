@@ -1,4 +1,4 @@
-import sceneProfiles from '../../../assets/scenes/profiles.json'
+import sceneProfiles from '../assets/scenes/profiles.json'
 
 import 'ol/ol.css';
 import Map from 'ol/Map';

@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@turf/turf": "^6.5.0",
     "@vitejs/plugin-vue": "^2.0.1",
     "cesium": "^1.89.0",
     "firebase": "^9.6.7",
