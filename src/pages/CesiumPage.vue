@@ -17,8 +17,7 @@ Radar2D(:position="{userLatitude, userLongitude}"
  @update2DMapState="update2DMapState" 
  :is2DMapClose="is2DMapClose")
 
-ParticipationModal(:isParticipationModalOpen="isParticipationModalOpen" 
- :isDataSavedToastOpen="isDataSavedToastOpen"
+ParticipationModal(:isParticipationModalOpen="isParticipationModalOpen"
  @stopParticipation="isParticipationModalOpen = false" 
  @saveParticipationInput="saveParticipationInput" 
  @previousParticipationStep="previousParticipationStep" 
@@ -53,7 +52,6 @@ export default {
         // Refs
         let is2DMapClose = ref(true)
         let isParticipationModalOpen = ref(false)
-        let isDataSavedToastOpen = ref(false)
 
         const { userLatitude, userLongitude } = useDeviceGeolocalization()
         const { userPan, userTilt, userGamma } = useDeviceOrientation()
@@ -88,16 +86,15 @@ export default {
 
         // -- SUBMIT to Database -- //
         const saveParticipationInput = async (userParticipationData) => {
-            isDataSavedToastOpen.value = true 
             isParticipationModalOpen.value = false
             let userInput = {...userParticipationData, ...userCurrentPosition, ...userOpinion};
             // Send to database
-            await postFirebase(userInput)
-            isDataSavedToastOpen.value = false
+            postFirebase(userInput)
+
         }
 
         return { userLatitude, userLongitude, userPan, userTilt, userGamma,
-        isDataSavedToastOpen, is2DMapClose, isParticipationModalOpen, 
+        is2DMapClose, isParticipationModalOpen, 
         startParticipation, update2DMapState, saveParticipationInput }
     }
 };

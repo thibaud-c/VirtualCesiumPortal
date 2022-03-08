@@ -11,7 +11,8 @@ div(class="absolute flex flex-col items-center justify-center w-full h-full over
        @previousParticipationStep="isParticipationStep=1" 
        @saveParticipationInput="emitSaveParticipationInput")
       
-participationToat(v-if="isDataSavedToastOpen")
+participationToat(v-if="isDataSavedToastOpen"
+ @closeParticipationToast="isDataSavedToastOpen=false")
 </template>
 
 <script>
@@ -31,13 +32,12 @@ export default {
   ],
   name: "CesiumPage-ParticipationModal",
   props:{
-    "isParticipationModalOpen":Boolean,
-    "isDataSavedToastOpen":Boolean
+    "isParticipationModalOpen":Boolean
   },
   setup(props, {emit}){
     // components depiction
     let isParticipationStep = ref(1)
-
+    let isDataSavedToastOpen = ref(false)
     let userCategory = null
 
     // Event listeners
@@ -48,7 +48,7 @@ export default {
     
     const emitSaveParticipationInput = (userTagsInput) => {
       isParticipationStep.value = 1
-
+      isDataSavedToastOpen.value = true
       let userParticipationInput = {...userCategory, ...userTagsInput};
       emit('saveParticipationInput',userParticipationInput)
     }
@@ -58,7 +58,7 @@ export default {
       isParticipationStep.value = 2
       userCategory = UserCategoryInput
     }
-    return { isParticipationStep, nextStep, emitStopParticipation, emitSaveParticipationInput }
+    return { isParticipationStep, isDataSavedToastOpen, nextStep, emitStopParticipation, emitSaveParticipationInput }
   },
 };
 </script>

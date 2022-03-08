@@ -15,6 +15,7 @@ import {fromLonLat} from 'ol/proj';
 
 const defaultZoom = 16
 const defaultCenter = [6.6270042,46.5170798]
+const iconPath = 'src/pages/CesiumPage/assets/icons/'
 
 /**
  * Init Openlayer map
@@ -59,10 +60,10 @@ export function initOpenlayerCS (containerName, isBasemap = true) {
 
 export function initMarkerOpenlayerCS(olmap, isStyle = true){
     //user marker
-    let markerOptions = { scale: 0.1, src: "../assets/icons/avatar2D.png" }
+    let markerOptions = { scale: 0.1, src: `${iconPath}avatar2D.png` }
     // Test if radar
     if (!isStyle) {  
-        markerOptions = { scale: 0.02, src: "../assets/icons/abstractAvatar2D.png" }
+        markerOptions = { scale: 0.02, src: `${iconPath}abstractAvatar2D.png` }
     }
 
     const userMarker = createOLMarker(defaultCenter[0], defaultCenter[1])
@@ -74,10 +75,10 @@ export function initMarkerOpenlayerCS(olmap, isStyle = true){
     let sceneMarkers = []
     sceneProfiles.forEach(asset => {
         let sceneMarker = createOLMarker(asset.lat, asset.lon)
-        markerOptions = { scale: 0.05, src: "../assets/icons/sandcastle.png" }
+        markerOptions = { scale: 0.05, src: `${iconPath}sandcastle.png` }
         // Test if radar
         if (!isStyle) {  
-            markerOptions = { scale: 0.006, src: "../assets/icons/abstractProject2D.png" }
+            markerOptions = { scale: 0.006, src: `${iconPath}abstractProject2D.png` }
         }
         addOLMarkerIconStyle(sceneMarker, markerOptions)
         sceneMarkers.push(sceneMarker)
@@ -110,7 +111,6 @@ function addOLMarkerToMap(map, markers){
 }
 
 export function updateOLPosition(olmap, olmarker, lat, lon){
-    console.log(lat, lon)
     olmap.getView().setCenter(fromLonLat([lon,lat]))
     olmarker.setGeometry(new Point(fromLonLat([lon,lat])));
 }

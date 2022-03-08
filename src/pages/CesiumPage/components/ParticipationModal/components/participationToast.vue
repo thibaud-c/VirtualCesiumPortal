@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class="absolute right-0 flex justify-end max-w-sm pt-5 pr-5")
+div(class="absolute right-0 flex justify-end max-w-sm pt-5 pr-5" @click="closeParticipationToast")
   div(class="flex items-center overflow-hidden text-white bg-green-400 rounded-lg shadow-md ") 
     span(class="w-10 px-2 border-r")
       svg.w-6.h-6(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
@@ -13,7 +13,17 @@ div(class="absolute right-0 flex justify-end max-w-sm pt-5 pr-5")
 
 export default {
   name: "CesiumPage-ParticipationModal-Toast",
+  emits:['closeParticipationToast'],
+  setup(props, { emit }){
+    const closeParticipationToast = () => {
+      emit('closeParticipationToast')
+    }
+    return {
+      closeParticipationToast
+    }
+  }
 };
+
 </script>
 
 <style scoped>

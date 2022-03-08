@@ -56,6 +56,7 @@ export function useDeviceOrientation() {
     let userPan = ref(0)
     let userTilt = ref(0)
     let userGamma = ref(0)
+    let userPan2 = ref(0)
 
     let compassCorrection = ref(0)
     let userPanSaved = ref(0)
@@ -68,7 +69,7 @@ export function useDeviceOrientation() {
         userTilt.value = event.beta ? Math.round(event.beta - 90) : userTilt.value
         userPan.value = event.alpha ? Math.round(Math.abs(360 - event.alpha)) : userPan.value
         userGamma.value = event.gamma ? event.gamma : userGamma.value
-        
+
         // Check if phone is vertical to switch to non absolute orientation because of inversion 
         if (userTilt.value > -15) {
             if (!isCorrectionOnGoing.value) {
@@ -84,7 +85,7 @@ export function useDeviceOrientation() {
             userPan.value = Math.round(Math.abs(userPanSaved.value + compassCorrection.value)) % 360
 
         } else {
-            if (!isCorrectionOnGoing.value) {
+            if (isCorrectionOnGoing.value) {
                 window.removeEventListener('deviceorientation', handleOrientation);
                 isCorrectionOnGoing.value = false
                 compassCorrection.value = 0

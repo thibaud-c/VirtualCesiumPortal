@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase , ref as firebase_ref, set } from "firebase/database";
 
 
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
@@ -20,7 +21,6 @@ const firebaseConfig = {
 const firebaseDB = initializeApp(firebaseConfig);
 const db = getDatabase(firebaseDB);
 
-
 // User ID for transactions
 const uuidv4 = () => {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -31,13 +31,23 @@ const uuidv4 = () => {
 // Create user id once at the beginning
 const userID = uuidv4() 
 
+
+
+//to search and replace    
+function replaceUndefinedOrNull(key, value) {
+  if (value === null || value === undefined || value === "" || value == 0) {
+    return undefined;
+  }
+  
+  return value;
+}
 export async function postFirebase(obj) {
+    
     let firebaseSavedObj ={
       ...obj,
       "userID": userID
     }
-    // post onject with dateTime as key
-    set(firebase_ref(db, (new Date()).getTime()), firebaseSavedObj)
+    set(firebase_ref(db, (new Date()).getTime().toString()),firebaseSavedObj)
     .then(() => {
       return 200
     })
