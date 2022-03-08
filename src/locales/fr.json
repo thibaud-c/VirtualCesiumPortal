@@ -31,7 +31,7 @@
             "building":"Bâtiment",
             "view":"Point de Vue",
             "object":"Mobilier Urbain",
-            "other":"Autre Element"
+            "other":"Autre Élément"
         },
         "tagsList":{
             "height":"Hauteur",
@@ -46,7 +46,7 @@
             "sustainability":"Durabilité",
             "comformity":"Conformité",
             "utility":"Utilité",
-            "lack":"Abscence",
+            "lack":"Absence",
             "other":"Autre"
         }
     }
