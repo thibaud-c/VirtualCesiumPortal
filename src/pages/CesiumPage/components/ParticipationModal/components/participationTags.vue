@@ -94,7 +94,7 @@ export default {
     let tagsList = ref([])
 
     // tags creation
-    const tagNames = ["architecture","beauty", "height", "density","noise","atmosphere","price","location","security","sustainability","comformity","utility", "lack","other"] 
+    const tagNames = ["architecture","beauty", "height", "density","noise","atmosphere","price","location","security","sustainability","utility", "lack","comformity","other"] 
     const createTagsFromList = (list) => {
         let tags = []
         list.forEach(element => {

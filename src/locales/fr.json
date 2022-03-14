@@ -30,6 +30,8 @@
         "elements-categories":{
             "building":"Bâtiment",
             "view":"Point de Vue",
+            "vegetation":"Végétation",
+            "path":"Chemin, Route",
             "object":"Mobilier Urbain",
             "other":"Autre Élément"
         },
@@ -38,7 +40,7 @@
             "density":"Densité",
             "beauty":"Esthétisme",
             "architecture":"Architecture",
-            "price":"Prix",
+            "price":"Coût",
             "location":"Emplacement",
             "noise":"Bruit",
             "atmosphere":"Ambiance",
@@ -46,7 +48,7 @@
             "sustainability":"Durabilité",
             "comformity":"Conformité",
             "utility":"Utilité",
-            "lack":"Absence",
+            "lack":"Manquant",
             "other":"Autre"
         }
     }

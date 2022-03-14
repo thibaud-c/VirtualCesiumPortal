@@ -9,13 +9,22 @@
         "heading": 3.2
     },
     {
-        "name": "amphitheater",
-        "id": 849487,
-        "lat": 6.626683,
-        "lon": 46.519724, 
+        "name": "long_bench",
+        "id": 871320,
+        "lat": 6.626645,
+        "lon": 46.519978, 
         "alt": 0,
-        "scale": 0.20,
-        "heading": 1.9
+        "scale": 2,
+        "heading": 1.7
+    },
+    {
+        "name": "round_bench",
+        "id": 871297,
+        "lat": 6.626708,
+        "lon": 46.519727, 
+        "alt": 0,
+        "scale": 0.03,
+        "heading": 5
     },
     {
         "name": "wheel",

@@ -16,11 +16,23 @@ div(class="p-5 text-gray-600 border-b border-gray-100")
                 img(src="./../assets/images/building.png")
             p(class="flex justify-center") {{$t("participation.elements-categories.building")}}
         span(class="flex flex-col w-1/2")
-            button(@click="emitNextParticipationStep('View')")
-                img(src="./../assets/images/view.png")
-            p(class="flex justify-center") {{$t("participation.elements-categories.view")}}
+            button(@click="emitNextParticipationStep('Vegetation')")
+                img(src="./../assets/images/vegetation.png")
+            p(class="flex justify-center") {{$t("participation.elements-categories.vegetation")}}
 
     // Category line 2
+    div(class="flex")
+        span(class="flex flex-col w-1/2")
+            button(@click="emitNextParticipationStep('Pathway')")
+                img(src="./../assets/images/path.png")
+            p(class="flex justify-center") {{$t("participation.elements-categories.path")}}
+        span(class="flex flex-col w-1/2")
+            button(class="justify-center h-full" @click="emitNextParticipationStep('View')")
+                span(class="flex justify-center")
+                    img(src="./../assets/images/view.png")
+            p(class="flex justify-center") {{$t("participation.elements-categories.view")}}
+
+    // Category line 3
     div(class="flex")
         span(class="flex flex-col w-1/2")
             button(@click="emitNextParticipationStep('Object')")
@@ -29,7 +41,7 @@ div(class="p-5 text-gray-600 border-b border-gray-100")
         span(class="flex flex-col w-1/2")
             button(class="justify-center h-full" @click="emitNextParticipationStep('Other')")
                 span(class="flex justify-center")
-                    img(class="w-5/6" src="./../assets/images/other.png")
+                    img(src="./../assets/images/other.png")
             p(class="flex justify-center") {{$t("participation.elements-categories.other")}}
 
 // footer

@@ -31,6 +31,8 @@
         "elements-categories":{
             "building":"Building",
             "view":"Vantage Point",
+            "vegetation":"Vegetation",
+            "path":"Pathway",
             "object":"Street Furniture",
             "other":"Other Element"
         },
