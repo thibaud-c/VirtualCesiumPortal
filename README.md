@@ -3,6 +3,9 @@
 Get involved in the co-design of your city within minutes, it is now possible!
 
 **Mobile Only**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/236c806f-34bf-4efa-a88b-298b4a929a48/deploy-status)](https://app.netlify.com/sites/virtualparticipatoryportal/deploys)
+
 You try the app on : https://virtualparticipatoryportal.netlify.app/
 
 Works worldwide, in Switzerland first with Swisstopo data, outside Switzerland with OSM data.
@@ -34,7 +37,9 @@ server: {
 
 
 4) Get free API Key and change the .env file
+
 https://firebase.google.com/
+
 https://cesium.com/platform/cesiumjs/
 
 
