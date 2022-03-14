@@ -1,4 +1,4 @@
-import sceneProfiles from '../assets/scenes/profiles.json'
+import sceneProfiles from '../../../assets/scenes/profiles.json'
 
 const containerName = 'cesium-container'
 const initZoom = 17

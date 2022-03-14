@@ -1,4 +1,9 @@
-import sceneProfiles from '../assets/scenes/profiles.json'
+import sceneProfiles from '../../../assets/scenes/profiles.json'
+
+import avatar2Dimg from '../../../assets/icons/avatar2D.png' 
+import abstractAvatar2Dimg from '../../../assets/icons/abstractAvatar2D.png' 
+import sandCastleimg from '../../../assets/icons/sandcastle.png'
+import abstractProject2Dimg from '../../../assets/icons/abstractProject2D.png'
 
 import 'ol/ol.css';
 import Map from 'ol/Map';
@@ -15,7 +20,6 @@ import {fromLonLat} from 'ol/proj';
 
 const defaultZoom = 16
 const defaultCenter = [6.6270042,46.5170798]
-const iconPath = 'src/pages/CesiumPage/assets/icons/'
 
 /**
  * Init Openlayer map
@@ -59,11 +63,12 @@ export function initOpenlayerCS (containerName, isBasemap = true) {
 }
 
 export function initMarkerOpenlayerCS(olmap, isStyle = true){
+
     //user marker
-    let markerOptions = { scale: 0.1, src: `${iconPath}avatar2D.png` }
+    let markerOptions = { scale: 0.1, src: avatar2Dimg }
     // Test if radar
     if (!isStyle) {  
-        markerOptions = { scale: 0.02, src: `${iconPath}abstractAvatar2D.png` }
+        markerOptions = { scale: 0.02, src: abstractAvatar2Dimg }
     }
 
     const userMarker = createOLMarker(defaultCenter[0], defaultCenter[1])
@@ -75,10 +80,10 @@ export function initMarkerOpenlayerCS(olmap, isStyle = true){
     let sceneMarkers = []
     sceneProfiles.forEach(asset => {
         let sceneMarker = createOLMarker(asset.lat, asset.lon)
-        markerOptions = { scale: 0.05, src: `${iconPath}sandcastle.png` }
+        markerOptions = { scale: 0.05, src: sandCastleimg }
         // Test if radar
         if (!isStyle) {  
-            markerOptions = { scale: 0.006, src: `${iconPath}abstractProject2D.png` }
+            markerOptions = { scale: 0.006, src: abstractProject2Dimg }
         }
         addOLMarkerIconStyle(sceneMarker, markerOptions)
         sceneMarkers.push(sceneMarker)
@@ -97,6 +102,7 @@ function createOLMarker(lat, lon){
 function addOLMarkerIconStyle(marker, markerOptions){
     marker.setStyle(new Style({
         image: new Icon(markerOptions),
+        crossOrigin: 'anonymous'
     }));
 }
 

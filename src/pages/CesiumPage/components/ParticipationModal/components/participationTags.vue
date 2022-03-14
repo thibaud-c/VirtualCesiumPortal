@@ -4,7 +4,7 @@ div(class="flex justify-between p-4 border-b border-gray-100")
     span(class="w-11/12 text-lg font-bold text-gray-700") {{$t("participation.directives.choose-tags-title")}}
     button(@click="emitStopParticipation")
         img(class='w-5 text-red-500 transition duration-150 hover:text-red-600' 
-         src="./../assets/icons/close.png")
+         src="../../../../../assets/icons/close.png")
 p(class="px-5 pt-5 font-semibold text-gray-600") {{$t("participation.directives.choose-tags-description")}}
 
 // Body
@@ -61,7 +61,7 @@ div(class="flex items-center justify-center")
     button(class="p-3" 
      v-if="isAudio" 
      @click="deleteAudio()")
-        img(class="h-5" src="./../assets/icons/bin.png")
+        img(class="h-5" src="../../../../../assets/icons/bin.png")
 
 // button submit 
 div(class="flex justify-center pb-5 border-b border-gray-100")

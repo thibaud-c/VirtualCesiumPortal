@@ -5,12 +5,12 @@ div(class='absolute flex flex-col transition duration-500 ease-in-out transform 
   // add positive
   button(class="relative w-12 h-12 m-3" 
    @click="emitStartParticipation('positive')")
-    img(src='./../assets/icons/positive.png' class="shadow-lg")
+    img(src='../../../assets/icons/positive.png' class="shadow-lg")
   
   // add negative
   button(class="relative w-12 h-12 m-3" 
    @click="emitStartParticipation('negative')")
-    img(src='./../assets/icons/negative.png' class="shadow-lg")
+    img(src='../../../assets/icons/negative.png' class="shadow-lg")
 </template>
 
 <script>

@@ -2,7 +2,7 @@
 button(class="absolute flex flex-col items-center w-full transform rotate-45 bg-yellow-500 translate-x-1/3 top-10" 
  @click="openGit")
     img(class="w-10 h-10" 
-     src='./../assets/icons/github.png')
+     src='../../../assets/icons/github.png')
     
     p {{$t("button.GitHub")}}
 </template>

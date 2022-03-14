@@ -3,11 +3,11 @@ main(class="flex flex-col items-center justify-center w-full")
   div(class="p-4 overflow-hidden bg-black shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-25 absolute bottom-0 rounded-t-[15px] w-full") 
     div(class='absolute z-10 flex items-center justify-center w-12')
         img(class="w-5 h-5 transform rotate-180 -translate-y-3 md:translate-x-6 md:translate-y-2"  
-         src='./../assets/icons/triangle.png')
+         src='../../../assets/icons/triangle.png')
     div(class='grid flex-1 grid-flow-col lg:p-6' )
       img(class="w-12 h-12 transform" 
        :style="`transform: rotate(${rotatioAngle}deg)`" 
-       src='./../assets/icons/compass.png')
+       src='../../../assets/icons/compass.png')
       span(class="flex items-center pl-4 font-semibold text-white text-md") {{currentUserAddress}}
 </template>
 

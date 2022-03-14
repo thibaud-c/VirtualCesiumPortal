@@ -1,6 +1,6 @@
 <template lang='pug'>
 // Background
-img(src='./LandingPage/assets/images/background.jpg' 
+img(src='../assets/images/background.jpg' 
  class="object-none object-right h-full lg:w-full")
 
 btnLanguageChoice
