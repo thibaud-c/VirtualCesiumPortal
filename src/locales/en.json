@@ -16,6 +16,28 @@
         "thanks":"Thank you! Enjoy your participation!"
 
     },
+    "model-description":{
+        "tower_trainstation":{
+            "title":"Sauva Tower",
+            "description":"New high-rise building in Lausanne, its rounded shape reminds the Sauvabelin tower. With 37 floors (around 130m), the Souva Tower will be the highest building in the French-speaking part of Switzerland. It was designed by the most fashionable architectural group of the moment: Zana Habib. Composed of offices and private apartments, it should see the light of day in 2026."
+        },
+        "starbucks_coffee":{
+            "title":"Starbuck Coffee Montbenon",
+            "description":"The most famous coffee brand will open a 4th establishment in Lausanne. This location will be perfect to enjoy your favorite hot drink on the esplanade or on the brand new terrace which will be sunny all year round."
+        },
+        "long_bench":{
+            "title":"Miror Bench",
+            "description":"Imagined by the designer Hamad Müller, this bench along the Allée Ernest-Ansermet will add to the esplanade a privileged place to watch the Ferris Wheel turning in front of the magnificent mountains that are overlooking Lausanne."
+        },
+        "round_bench":{
+            "title":"Bean Bench",
+            "description":"Designed by the Dav' Furniture group based at EPFL. This bench will provide more confortable seating for the esplanade."
+        },
+        "ferris_wheel":{
+            "title":"New Ferris Wheel of Lausanne",
+            "description":"With its 51 m height, it will offer tourists and locals alike a breathtaking view of the lake and Lausanne. It will also be an excellent meeting place for all."
+        }
+    },
     "participation":{
         "directives":{
             "choose-category-title":"Specify your opinion",

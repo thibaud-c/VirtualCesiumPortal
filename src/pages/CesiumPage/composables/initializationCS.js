@@ -1,4 +1,6 @@
 import sceneProfiles from '../../../assets/scenes/profiles.json'
+import i18n from '../../../i18n'
+
 
 const containerName = 'cesium-container'
 const initZoom = 17
@@ -126,6 +128,8 @@ async function addAsset (viewer, asset){
             scale: asset.scale
             
         },
+        name:i18n.global.t(`model-description.${asset.name}.title`),
+        description:i18n.global.t(`model-description.${asset.name}.description`)
     }); 
 }
 

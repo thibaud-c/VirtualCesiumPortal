@@ -1,6 +1,6 @@
 [
     {
-        "name": "starbucks",
+        "name": "starbucks_coffee",
         "id": 849429,
         "lat": 6.627227,
         "lon": 46.520002,   
@@ -27,7 +27,7 @@
         "heading": 5
     },
     {
-        "name": "wheel",
+        "name": "ferris_wheel",
         "id": 790040,
         "lat": 6.62596,
         "lon": 46.51947, 

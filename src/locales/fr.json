@@ -15,6 +15,28 @@
         "directive":"Cette experience vous permet de découvrir en avant-première ce nouvel outil, mais aussi d'améliorer son développement en donnant votre avis ! Votre participation est sans engagement, vous pouvez vous arrêter à tout moment.",
         "thanks":"Merci et bonne participation !"
     },
+    "model-description":{
+        "tower_trainstation":{
+            "title":"Tour Sauva",
+            "description":"Nouvelle haute construction de Lausanne, sa forme arrondie rappelle la tour Sauvabelin. Du haut de ses 37 étages (130m), la tour << Souva >> sera le plus haut bâtiment de la Suisse romande. Elle a été créée par le cabinet d'architecte le plus en vogue du moment: Zana Habib. Composée de bureaux et d'appartements privés, elle devrait voir le jour en 2026."
+        },
+        "starbucks_coffee":{
+            "title":"La plus connue des enseignes de café va ouvrir un 4ème établissement à Lausanne. Cet emplacement sera parfait pour profiter de votre boisson chaude préférée sur l'esplanade ou sur la toute nouvelle terrasse qui sera ensoleillée toute l'année.",
+            "description":""
+        },
+        "long_bench":{
+            "title":"Banc Miroir",
+            "description":"Imaginé par le créateur Hamad Müller, ce banc le long de l'Allée Ernest-Ansermet ajoutera à l'esplanade une place privilégiée pour regarder la Grande Roue tourner devant les magnifiques montagnes surplombants Lausanne."
+        },
+        "round_bench":{
+            "title":"Banc Bean",
+            "description":"Designé par le groupe Dav' Furniture basé ä l'EPFL. Ce banc permettra d'offrir plus d'assises confortables sur l'esplanade."
+        },
+        "ferris_wheel":{
+            "title":"Nouvelle Grande Roue de Lausanne",
+            "description":"Avec sa hauteur de 51 m, elle offrira aux touristes comme aux locaux une vue à couper le souffle sur le lac et Lausanne. Elle sera également une excellente place de rencontre pour tous."
+        }
+    },
     "participation":{
         "directives":{
             "choose-category-title":"Décris ton avis",
