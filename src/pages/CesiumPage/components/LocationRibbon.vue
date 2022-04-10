@@ -12,7 +12,7 @@ main(class="flex flex-col items-center justify-center w-full")
 </template>
 
 <script>
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
 export default {
   name: "CesiumPage-LocationRibbon",
@@ -39,9 +39,11 @@ export default {
           console.error('Geocoder failed due to: ' + response.status);
         }
       };
-    
-    watch(() => props.position, (position) => {
-      updateUserAddress(position.userLatitude, position.userLongitude)
+
+    onMounted(() => {
+      setInterval(() => {
+          updateUserAddress(props.position.userLatitude, props.position.userLongitude)
+      }, 30000)    
     })
     
     watch(() => props.orientation, (orientation) => {
